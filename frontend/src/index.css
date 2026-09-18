@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+@theme {
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-base-950: #080a10;
+  --color-base-900: #0b0e15;
+  --color-base-850: #10141d;
+  --color-base-800: #141926;
+  --color-base-700: #1c2231;
+  --color-base-600: #2a3247;
+  --color-base-500: #3a4459;
+  --color-text-primary: #e9ecf3;
+  --color-text-secondary: #949eb5;
+  --color-text-tertiary: #616c85;
+
+  --color-regime-on: #33d691;
+  --color-regime-on-dim: #14351f;
+  --color-regime-neutral: #e6c358;
+  --color-regime-neutral-dim: #362f14;
+  --color-regime-caution: #e69651;
+  --color-regime-caution-dim: #36240f;
+  --color-regime-off: #e6567a;
+  --color-regime-off-dim: #351520;
+}
+
+body {
+  background: var(--color-base-950);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+}
+
+.font-display { font-family: var(--font-display); }
+.font-mono-num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--color-base-900); }
+::-webkit-scrollbar-thumb { background: var(--color-base-600); border-radius: 4px; }
