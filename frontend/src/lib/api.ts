@@ -22,7 +22,7 @@ export interface LiveMarketPoint {
 async function safeFetch<T>(path: string): Promise<T | null> {
   try {
     const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 6000);
+    const timeout = setTimeout(() => controller.abort(), 20000);
     const res = await fetch(`${BACKEND_URL}${path}`, { signal: controller.signal });
     clearTimeout(timeout);
     if (!res.ok) return null;
